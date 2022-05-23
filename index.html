@@ -5,9 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <div>Welcome</div>
+    <div id="sidebar" class="container">
+        <h2><i class="material-icons">dashboard</i>Dashboard</h2>
+        <div class="sidebar-box">
+            <ul class="nav">
+                <li class="nav-link"><i class="material-icons">home</i>Home</li>
+                <li class="nav-link"><i class="material-icons">perm_identity</i>Profile</li>
+                <li class="nav-link"><i class="material-icons">message</i>Messages</li>
+                <li class="nav-link"><i class="material-icons">history</i>History</li>
+                <li class="nav-link"><i class="material-icons">file_copy</i>Tasks</li>
+                <li class="nav-link"><i class="material-icons">groups</i>Communities</li>
+            </ul>
+            <ul class="brand">
+                <li class="brand-link"><i class="material-icons">settings</i>Settings</li>
+                <li class="brand-link"><i class="material-icons">help</i>Support</li>
+                <li class="brand-link"><i class="material-icons">shield</i>Privacy</li>
+            </ul>
+        </div>
+    </div>
+    <header class="container">
+        <div class="header-top">
+            <div class="search-box">
+                <label for="search-bar"><i class="material-icons">search</i></label>
+                <input type="text" name = "search" id="search-bar">
+            </div>
+            <div class="account-box">
+                <i class="material-icons">notifications_active</i>
+                <i class="material-icons">face</i>
+                <div class="account-name">Morgan Oakley</div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="profile-box">
+                <img class="profile-img" src="./imgs/logoipsum-logo-15.svg" alt="profile-img">
+                <div class="greeting-box">
+                    <div class="greeting">Hi there,</div>
+                    <h2>Morgan Oakley (@morgan)</h2>
+                </div>
+            </div>
+            <ul class="buttons">
+                <li><button class="user-action">New</button></li>
+                <li><button class="user-action">Upload</button></li>
+                <li><button class="user-action">Share</button></li>
+            </ul>
+        </div>
+    </header>
+    <main class="container">
+        <section id="projects">
+            <h3>My Projects</h3>
+            <div class="card-box">
+                <div class="project card">
+                    <h5>Restaurant Page</h5>
+                    <img src="" alt="card1-img" class="card-img">
+                    <p>Card 1</p>
+                    <div class="card-icons">
+                        <i class="material-icons">grade</i>
+                        <i class="material-icons">visibility</i>
+                        <i class="material-icons">open_in_new</i>
+                    </div>
+                </div>
+                <div class="project card">
+                    <h5>Tic Tac Toe</h5>
+                    <img src="" alt="card2-img" class="card-img">
+                    <p>Card 2</p>
+                    <div class="card-icons"></div>
+                </div>
+                <div class="project card">
+                    <h5>Library</h5>
+                    <img src="" alt="card3-img" class="card-img">
+                    <p>Card 3</p>
+                    <div class="card-icons"></div>
+                </div>
+                <div class="project card">
+                    <h5>Sign-up Form</h5>
+                    <img src="" alt="card4-img" class="card-img">
+                    <p>Card 4</p>
+                    <div class="card-icons"></div>
+                </div>
+                <div class="project card">
+                    <h5>Calculator</h5>
+                    <img src="" alt="card5-img" class="card-img">
+                    <p>Card 5</p>
+                    <div class="card-icons"></div>
+                </div>
+                <div class="project card">
+                    <h5>Etch A Sketch</h5>
+                    <img src="" alt="card6-img" class="card-img">
+                    <p>Card 6</p>
+                    <div class="card-icons"></div>
+                </div>
+                <div class="project card">
+                    <h5>Rock Paper Scissors</h5>
+                    <img src="" alt="card7-img" class="card-img">
+                    <p>Card 7</p>
+                    <div class="card-icons"></div>
+                </div>
+                <div class="project card">
+                    <h5>Landing Page</h5>
+                    <img src="" alt="card8-img" class="card-img">
+                    <p>Card 8</p>
+                    <div class="card-icons"></div>
+                </div>
+            </div>
+        </section>
+        <section id="announcements">
+            <h3>Announcements</h3>
+            <div class="announcement card">
+                <h5>Site Maintenance</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores voluptatum ipsa cupiditate unde</p>
+                <hr>
+                <h5>Community Share Day</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores voluptatum ipsa cupiditate unde</p>
+                <hr>
+                <h5>Updated Privacy Policy</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores voluptatum ipsa cupiditate unde</p>
+            </div>
+        </section>
+        <section id="trending">
+            <h3>Trending Exercises</h3>
+            <div class="trending card">
+                <h5>Exercise 1</h5>
+                <p>exercise description</p>
+                <hr>
+                <h5>Exercise 2</h5>
+                <p>exercise description</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
